@@ -2,6 +2,9 @@
 
 import argparse
 
+# see
+# https://www.freecodecamp.org/news/what-is-endianness-big-endian-vs-little-endian/
+
 help_screen = '''
    pass an integer and and an endianness, 'big' (default) or 'little'.
 '''
@@ -9,8 +12,6 @@ help_screen = '''
 parser = argparse.ArgumentParser(description=help_screen)
 parser.add_argument('-i','--integer', type = int, help = "specify the integer value",required = True)
 parser.add_argument('-o','--order', default = 'big', choices = ['big', 'little'],type = str, help = 'specify byte order, endianness big/little')
-
-# parser.add_argument("--order", required=False, help="big or little", choices=['big','little'], default='big')
 args = parser.parse_args()
 
 
