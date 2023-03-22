@@ -27,7 +27,7 @@ see: https://en.wikipedia.org/wiki/Endianness
 
 
     22       f5        90  <---- little-endian, little end 🥚
- 00100010 11110101 10010000  (little-endian, little end)
+ 00100010 11110101 10010000  (base 2)
 
     addr   22
     addr+1 f5
