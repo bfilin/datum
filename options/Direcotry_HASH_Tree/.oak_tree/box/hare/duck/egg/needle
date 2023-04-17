@@ -1,0 +1,48 @@
+'''
+    Welcome, you have found the needle
+    Here is the correct output digest for dir_a:
+     b'226aa0dc8178c683a525a01c241fac91f09af7f9' 
+    
+    Possible algorithm for your solution to implement
+    can be found below:
+'''
+
+def file_digest(file_abs_path, file_relative_path):
+    ''' this helper function returns the digest value for file 
+          from Hash('file_relative_path' + file-contents)
+
+    Note(s): 
+        * For the purposes of computing the digest of the file use a
+          sha1 object from hashlib, and return the value from .digest() method.
+        * You can use file_abs_path for reading file-content
+    '''
+    # Todo
+    # Initialize the hash object
+    # update hash object with relative path 
+    # read file contents
+    # update hash object with file-contents
+    # return digest value
+
+
+
+def get_tree_digest(prefix, path_in_tree, debug=False):
+    # Todo
+    # Initialize the hash object
+    # update hash object with path in tree 
+
+    # Calculate the absolute path to the path in tree
+    # now use it to get the directory contents
+
+    # For every child in directory contents do:
+        # Compute the absolute path of the child
+        # Compute the relative path of the child
+        # If the child is a file:
+            # use helper function to get the digest of the file
+        # Else the child is a directory:
+            # recursively call get_tree_digest to get digest of child directory
+        # remember to print debug information if debug = True
+
+        # Update hash object with calculated hash of the child
+    # Compute and return the hash of the current node
+
+

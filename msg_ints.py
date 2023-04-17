@@ -18,13 +18,13 @@ message_ints = []  # accumulator
 for i in range(0,len(message_string),3):
     # print(i)
     # print(message_string[i:i+3])
-    # print(message_string[i:i+3].encode()) # utf-8 default 
+    print(message_string[i:i+3].encode()) # utf-8 default 
     message_ints.append(int.from_bytes(message_string[i:i+3].encode()))
 
 # print accumulator 
 print( message_ints, type(message_ints) )
 
-'''
+
 ######################################################################
 # now in the other direction 
 message_bytes = bytes()  # accumulator
@@ -40,4 +40,4 @@ print( message_bytes, type(message_bytes) )
 
 # you can convert back to 
 print(message_bytes.decode(), type(message_bytes.decode() ))
-'''
+

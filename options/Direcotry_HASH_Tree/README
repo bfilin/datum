@@ -1,0 +1,18 @@
+* demo.py - examples of calculating digests 
+
+* tree_digest.py - TODO: implement get_tree_digest() and the helper function
+
+* check.py - use this file to check execution of your get_tree_digest function
+   Here is an example execution on target dir_a with --debug enabled:
+    1764cf2258475093e22f22e25cd9b790acaf4f39 : dir_a/dir_b1
+    71ae486488f45560fb994c8756ea0af8fe5a972d : dir_a/dir_b2/file_b2.txt
+    97d0003592f57f00dd50bd60bd18716c2348ad86 : dir_a/dir_b2
+    905c376effb7a57170ad628e55a713c1e07aa899 : dir_a/file_a.txt
+    9fb6109a82e9e0455316353f3fe8ebe4307384e0 : dir_a/song_a.m4a
+
+           Function: get_tree_digest
+            Runtime: 0.00033926963806152344
+             Prefix: /home/user/Documents/dir_hash_option
+          Directory: dir_a
+        Digest Hash: b'226aa0dc8178c683a525a01c241fac91f09af7f9'
+
